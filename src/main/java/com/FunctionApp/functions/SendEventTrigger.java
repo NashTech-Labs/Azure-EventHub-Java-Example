@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class SendEventTrigger {
     @Value("${eventhub.uri}")
-    private String eventHubUri;
+    public String eventHubUri;
     @Value("${eventhub.name}")
-    private String eventHubName;
+    public String eventHubName;
 
     @FunctionName("sendEvent")
     public String run(
